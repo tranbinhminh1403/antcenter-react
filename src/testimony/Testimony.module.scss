@@ -25,6 +25,7 @@
     padding: 50px 0;
 
     .avatarContainer {
+
       display: flex;
       flex-direction: row;
       gap: 5%;
@@ -76,6 +77,7 @@
         flex-direction: column;
         justify-content: center;
         align-items: center;
+        padding: 0 5%;
 
         .quoteIcon {
           width: 50px;
@@ -96,6 +98,7 @@
         }
 
         p {
+
           text-align: center;
         }
 
@@ -120,5 +123,8 @@
   .prev,
   .next {
     display: none;
+  }
+  .avatarContainer {
+    margin-top: 50px;
   }
 }
