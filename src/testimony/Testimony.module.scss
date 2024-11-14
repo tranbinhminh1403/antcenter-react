@@ -1,0 +1,124 @@
+@keyframes scrollQuoteFromRight {
+  0% {
+    transform: translateX(30px);
+    opacity: 0;
+  }
+
+  100% {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+@keyframes scrollAvatars {
+    0% {
+        transform: translateX(calc(60px));
+    }
+    5% {
+        transform: translateX(0);
+    }
+}
+
+.testimony {
+  .container {
+    background-color: rgb(244, 246, 248);
+    padding: 50px 0;
+
+    .avatarContainer {
+      display: flex;
+      flex-direction: row;
+      gap: 5%;
+      justify-content: center;
+      align-items: center;
+
+      // Normal avatar
+      .avatar {
+        img {
+          animation: scrollAvatars 3s linear;
+          width: 60px;
+          height: 60px;
+          border-radius: 50%;
+          opacity: 0.6;
+          cursor: pointer;
+        }
+      }
+
+      // Active/middle avatar with animation
+      .active {
+        img {
+          animation: scrollAvatars 2s linear;
+          width: 100px;
+          height: 100px;
+          opacity: 1;
+          transform: scale(1);
+        }
+      }
+    }
+
+    .item {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+      overflow: hidden;
+
+      // Prev and next buttons
+      .prev,
+      .next {
+        cursor: pointer;
+        font-size: 20px;
+        color: #666;
+      }
+
+      // Main display
+      .carousel {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+
+        .quoteIcon {
+          width: 50px;
+          height: 50px;
+        }
+
+        .quote {
+          height: 100px;
+          font-size: 1.1rem;
+          font-weight: 400;
+          animation: scrollQuoteFromRight 0.5s linear;
+        }
+
+        h2 {
+          text-align: center;
+          font-size: 2.75rem;
+          font-weight: 700;
+        }
+
+        p {
+          text-align: center;
+        }
+
+        .details {
+          margin-top: 50px;
+
+          .name {
+            margin: 5px 0;
+            font-weight: bold;
+          }
+
+          .title {
+            color: #637381;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 992px) {
+  .prev,
+  .next {
+    display: none;
+  }
+}

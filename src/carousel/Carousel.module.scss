@@ -1,0 +1,51 @@
+@keyframes swipe {
+    0% {
+        transform: translateX(0);
+    }
+
+    100% {
+        transform: translateX(-100%);
+    }
+}
+
+.container {
+    margin-top: 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center; 
+    .title {
+        h2 {    
+            text-align: center;
+            font-size: 2.75rem;
+            font-weight: 700;
+        }
+        p {
+            text-align: center;
+            color: rgb(99, 115, 129);
+            font-size: 1.25rem;
+            font-weight: 400;
+            margin: 24px 0 0;
+        }
+    }
+    .carouselContainer {
+        width: 90%;
+        overflow: hidden;
+        display: flex;
+        flex-direction: row;
+        margin: 0 auto; 
+        .carousel {
+            margin-top: 50px;
+            display: flex;
+            animation: swipe 10000ms linear infinite;
+            .image {
+                img {
+                    height: 120px;
+                    max-width: 200px;
+                }
+            }
+        }
+    }
+}
+
+

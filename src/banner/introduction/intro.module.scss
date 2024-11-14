@@ -1,0 +1,102 @@
+.intro {
+    margin: 2% 7%;
+    h1 {
+        font-size: 2.75rem; 
+        margin: 0;
+        font-weight: 700;
+        line-height: 1.333333;
+        color: #212B36;
+    }
+    h1:nth-of-type(2) {
+        color: #007bff; 
+    }
+    .title {
+        margin-top: 50px;
+        color: rgb(99, 115, 129)
+    }
+    .features {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px; 
+        margin: 20px 0;
+        div {
+            border-radius: 5px;
+            padding: 10px 15px;
+            font-size: 1rem;
+            font-weight: 700;
+            line-height: 1.5;
+            box-shadow: rgba(145, 158, 171, 0.2) 0px 2px 4px -1px, rgba(145, 158, 171, 0.14) 0px 4px 5px 0px, rgba(145, 158, 171, 0.12) 0px 1px 10px 0px;
+            cursor: pointer;
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+            overflow: visible
+        }
+        div:hover {
+            background-color: rgba(145, 158, 171, 0.2);
+            transition: background-color 0.3s;
+        }
+        img {
+            margin-left: 3px;
+            width: 25px;
+            height: 25px;
+            overflow: visible
+            /* padding: 3%;  */
+        }
+    }
+    
+    .registerBottom {
+        height: auto;
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        margin-top: 50px;
+        
+        .registerBottomText {
+            color: rgb(99, 115, 129);
+            margin-left: 10px;
+            font-size: 1rem;
+        }
+        
+        .button {
+            padding: 8px 22px;
+        }
+    }
+    
+    .statistics {
+        margin-top: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        .items {
+            display: flex;
+            flex-direction: row;
+            align-items: center;
+    
+            div:nth-of-type(2) {
+                margin-left: 10px;
+            }
+            .roundshape {
+                width: 25px;
+                height: 25px;
+                border-radius: 50%;
+                background-color: rgb(255, 171, 0, 0.24);
+            }
+    
+            h3 {
+                margin-bottom: 5px; 
+                font-size: 1.5rem;
+            }
+    
+            span {
+                color: rgb(99, 115, 129);
+            }
+        }
+    }
+}
+
+
+
+
+
+

@@ -1,0 +1,95 @@
+
+.container {
+    background-color: #EDFAFE;
+    padding: 20px;
+    border-radius: 48px;
+    margin: 0 4%;
+    padding-bottom: 40px;
+    margin-bottom: 40px;
+
+    .title {
+        text-align: center;
+
+        h3 {
+            font-size: 2rem;
+            font-weight: 700;
+            text-align: center;
+            line-height: 1.5;
+        }
+
+        p {
+            font-size: 1rem;
+            line-height: 1.5;
+            font-weight: 700;
+            text-align: center;
+            color: rgb(73, 204, 249);
+        }
+    }
+
+    .mainContent {
+        margin-top: 50px;
+
+        .tabList {
+            // display: flex;
+            // flex-direction: row;
+            // justify-content: center;
+
+            .scrollLeft,
+            .scrollRight {
+                background-color: transparent;
+                border: none;
+                cursor: pointer;
+                width: 30px;
+                height: 30px;
+                color: #666;
+            }
+
+            .tabContent {
+                display: flex;
+                overflow: hidden;
+                scroll-behavior: smooth;
+                padding: 0 2%;
+
+                button {
+                    color: rgb(99, 115, 129);
+                    margin: 0 2%;
+                    width: auto; /* Makes the button fit the text */
+                    white-space: nowrap; /* Prevents text wrapping */
+                    border: none;
+                    background-color: transparent;
+                    cursor: pointer;
+                    box-sizing: border-box;
+                    align-items: center;
+                    font-size: 0.875rem;
+                    padding: 5px 15px;
+                    border-bottom: 2px solid rgb(73, 204, 249);
+                }    
+            }
+
+        }
+    }
+
+    .earlyAccess {
+        padding-left: 3%;
+    }
+}
+
+// @media (min-width: 700px) {
+
+//     .scrollLeft,
+//     .scrollRight {
+//         display: none;
+//     }
+// }
+
+@media (max-width: 700px) {
+    .tabList {
+        display: flex;
+        flex-direction: row;
+        justify-content: left;
+    }
+    .tabContent {
+        display: flex;
+        justify-content: flex-start !important;
+    }
+}

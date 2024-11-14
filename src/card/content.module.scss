@@ -1,0 +1,84 @@
+@keyframes slideIn {
+    from {
+        transform: translateX(-20%); // Start from the right
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); // End at the original position
+        opacity: 1;
+    }
+}
+
+@keyframes slideOut {
+    from {
+        transform: translateX(20%); // Start from the right
+        opacity: 0;
+    }
+    to {
+        transform: translateX(0); // End at the original position
+        opacity: 1;
+    }
+}
+
+.content {
+    margin-top: 20px;
+    padding: 0 2%;
+    .contentItem {
+        animation: slideIn 0.5s ease-out;
+        h3 {
+            margin-right: 10%;
+            font-size: 1.875rem;
+        }
+
+        p {
+            margin-right: 10%; 
+            font-size: 0.875rem;
+        }
+        .summary {
+            .part {
+                display: flex;
+                flex-direction: row;
+                // margin-left: 5%;
+                margin-bottom: 25px;
+                .square {
+                    height: fit-content;
+                    border: 0;
+                    padding: 10px;
+                    background-color: rgb(255, 255, 255);
+                    box-shadow: rgba(145, 158, 171, 0.2) 0px 0px 2px 0px, rgba(145, 158, 171, 0.12) 0px 12px 24px -4px;
+                    border-radius: 16px;
+                    img {
+                        width: 30px;
+                        height: 30px;
+                    }
+                }
+                .details {
+                    p {
+                        margin: 0 12px 10px 12px;
+                    }
+                    p:nth-child(1) {
+                        font-weight: 700;
+                        font-size: 1.2rem;
+                    }
+                    
+                }
+            }
+        }
+    }
+    .videoContainer {
+        animation: slideOut 0.5s ease-out;
+        video {
+            width: 100%;
+            border-radius: 24px;
+        }
+    }
+}
+
+@media (max-width: 992px) {
+    .contentItem {
+        order: 2;
+    }
+    .videoContainer {
+        order: 1;
+    }
+}

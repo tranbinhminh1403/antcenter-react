@@ -1,0 +1,53 @@
+.register {
+    background-color: rgb(254, 233, 209);
+    padding: 50px 0;
+    .container {
+        .form {
+
+            .title {
+                text-align: center;
+                margin-top: 50px;
+                margin-bottom: 50px;
+                margin-left: 5%;
+                h3 {
+                    font-size: 2rem;
+                    font-weight: 700;
+                }
+                p {
+                    margin-top: 20px;
+                    font-size: 1.2rem;
+                    color: rgb(99, 115, 129);
+                }
+            }
+            .inputForm {
+                display: flex;
+                flex-direction: column;
+                align-items: center;
+
+                form {
+                    width: 80%;
+                }
+                .input {
+                    display: flex;
+                    flex-direction: column;
+                    gap: 10px;
+                    .inputField {
+                        height: 3.5rem;
+                    }
+                }
+
+                .submit {
+                    margin-top: 20px;    
+                    .submitBtn {
+                        width: 100%;
+                    }
+                }
+
+            }
+        }
+
+        .image {
+
+        }
+    }
+}

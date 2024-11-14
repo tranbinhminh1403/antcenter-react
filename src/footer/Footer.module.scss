@@ -1,0 +1,106 @@
+.footer {
+    margin-top: 10px;
+    padding-bottom: 30px;
+
+    .container {
+        .item {
+            width: 100%;
+            padding-left: 5%;
+            padding-bottom: 30px;
+            padding-top: 30px;
+
+            // 1st item
+            .basics {
+                .logo {
+                    margin-bottom: 20px;
+                }
+
+                .description {
+                    font-size: 1rem;
+                    color: #595d61;
+                    font-weight: 500;
+                }
+
+                .social {
+                    margin-top: 40px;
+
+                    p {
+                        font-weight: 600;
+                        font-size: 1.2rem;
+                    }
+
+                    .icon {
+                        display: flex;
+                        gap: 10px;
+
+                        img {
+                            width: 20px;
+                            height: 20px;
+                            padding: 4px;
+                        }
+
+                        button {
+                            padding: 0;
+                            background-color: transparent;
+                            border: 0;
+                            border-radius: 50%;
+                            color: #696CFF;
+                        }
+
+                        button:hover {
+                            background-color: #F3F4F5;
+                            cursor: pointer;
+                        }
+
+                    }
+                }
+            }
+            //
+
+            // 2nd item
+            .smallContainer {
+                .smallItem {
+                    padding-left: 2%;
+
+                    .home,
+                    .compare {
+                        display: flex;
+                        flex-direction: column;
+                        gap: 10px;
+
+                        .title {
+                            font-weight: 600;
+                            font-size: 1.2rem;
+                        }
+
+                        a {
+                            text-decoration: none;
+                            color: #595d61
+                        }
+
+                        a:hover {
+                            text-decoration: underline;
+                            color: black;
+                        }
+                    }
+                }
+            }
+            //
+
+            //3rd item
+            .antTitle {
+                font-weight: 600;
+                font-size: 1.2rem;
+            }
+            .desc {
+                color: #595d61;
+            }
+            //
+        }
+    }
+    .copyright {
+        text-align: center;
+        margin-top: 20px;
+        color: #595d61;
+    }
+}
