@@ -25,3 +25,8 @@
     box-shadow: none;
     background-color: rgb(105, 108, 255);
 }
+
+.btn:hover {
+    color: rgb(255, 255, 255);
+    background-color: rgb(26, 29, 191);
+}
